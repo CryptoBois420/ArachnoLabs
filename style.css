@@ -1,0 +1,162 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        html {
+          scroll-behavior: smooth;
+
+        }
+header {
+    background-color: black;
+    color: white;
+    padding: 20px; /* Adjust the padding to increase the height */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    flex: 1; /* Takes up as much space as possible */
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 50px; /* Adjust the size of the logo image */
+    margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.mainlogotext {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.navigation {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+        /* width */
+        ::-webkit-scrollbar {
+          width: 5px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey;
+          border-radius: 5px;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: rgb(0, 0, 0);
+          border-radius: 5px;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 20px;
+            max-width: 1200px; /* Adjust the max-width based on your design */
+            margin: 0 auto; /* Center the container */
+        }
+
+        .product {
+            background-color: white;
+            border: 1px solid #ddd;
+            margin: 10px;
+            padding: 15px;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .product:hover {
+            transform: scale(1.05);
+        }
+
+        .product img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .product h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            color: #888;
+            font-size: 0.9rem;
+        }
+
+.button {
+  background-color: #f44336;
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.mainlogotext {
+    float: left;
+    text-decoration-color: black;
+}
+
+.about-us {
+    float: right;
+}
+
+.button2 {
+  border-radius: 8px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: white;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
